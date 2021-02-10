@@ -4,6 +4,7 @@
     margin-left: auto;
     padding-right: 10px;
     padding-left: 10px;
+    background-color: #000000
   }
 
 @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
@@ -56,10 +57,6 @@ div.preheader {
   -fallback-width: 90% !important;
   width: calc(100% - 60px) !important;
 }
-.snippet,
-.webversion {
-  Float: none !important;
-}
 .stack .column {
   max-width: 400px !important;
   width: 100% !important;
@@ -69,10 +66,6 @@ div.preheader {
 }
 .fixed-width.has-border .layout__inner {
   box-sizing: border-box;
-}
-.snippet,
-.webversion {
-  width: 50% !important;
 }
 .ie .btn {
   width: 100%;
@@ -159,21 +152,6 @@ div.preheader {
     display: table-cell;
     Float: none !important;
     vertical-align: top;
-  }
-  div.preheader,
-  .email-footer {
-    max-width: 560px !important;
-    width: 560px !important;
-  }
-  .snippet,
-  .webversion {
-    width: 280px !important;
-  }
-  div.header,
-  .layout,
-  .one-col .column {
-    max-width: 600px !important;
-    width: 600px !important;
   }
   .fixed-width.has-border,
   .fixed-width.x_has-border,
