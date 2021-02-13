@@ -1,4 +1,4 @@
-@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+ㅍ@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
     .ns{font-family: 'Noto Sans KR', sans-serif;}
 
 * {
@@ -9,7 +9,6 @@
   margin: 0;
   padding: 0;
   text-size-adjust: 100%;
-  background-color: #000000;
 }
 
 .wrapper {
@@ -17,6 +16,7 @@
     margin-left: auto;
     padding-right: 10px;
     padding-left: 10px;
+    background-color: #000000;
   }
 
 table {
@@ -27,6 +27,9 @@ table {
 .header {
   margin: 0 auto; 
   max-width: 600px;
+  min-width: 320px;
+  width: 320px;
+  width: calc(28000% - 173000px);
   margin-left: auto;
   margin-right: auto;
 }
@@ -34,6 +37,7 @@ table {
 .layout {
     display: table;
     margin: 0 auto;
+    margin-top: 50px;
     background-color: #ffffff;
     max-width: 600px;
     min-width: 320px;
@@ -61,6 +65,9 @@ table {
   .layout {
     width: 600px; !important;
   }
+  .header {
+    width: 600px; !important;
+  }
   .column {
     display: table-cell;
   }
@@ -70,6 +77,10 @@ table {
   .one-col {
     width: 600px; !important
   }
+}
+
+[owa] .header {
+  width: 600px; !important;
 }
 
 [owa] .layout {
@@ -90,6 +101,40 @@ table {
 
 .spacing {
   margin: 20px;
+}
+
+.logo {
+  line-height: 32px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right:20px;
+}
+
+.logo img {
+  border: 0; 
+  max-width: 200px;
+  width: 200px;
+}
+
+.month img {
+  width: 100%;
+  height: auto;
+  border-radius: 10%
+}
+
+.button table {
+  border-collapse: separate;
+  line-height: 100%
+}
+
+.button table td {
+  border: none;
+  border-radius: 6px;
+  cursor: auto;
+  padding: 11px 20px;
+  background-color: #b4d2e7
+  transition: all;
 }
 
 .wrapper .footer__share-button a:hover,
@@ -320,6 +365,7 @@ div.preheader {
     background-image: url(http://i10.createsend1.com/static/eb/master/13-the-blueprint-3/images/forward@2x.png) !important;
   }
 }
+
 @media (max-width: 321px) {
   .fixed-width.has-border .layout__inner {
     border-width: 1px 0 !important;
