@@ -124,17 +124,31 @@ table {
 }
 
 .button table {
+  table-layout: auto;
   border-collapse: separate;
+  border-spacing: 10px;
+  border-style: hidden;
   line-height: 100%
 }
 
 .button table td {
+  white-space: nowrap;
   border: none;
   border-radius: 6px;
   cursor: auto;
   padding: 11px 20px;
   background-color: #b4d2e7
   transition: all;
+}
+
+.button table td a {
+  background-color: #b4d2e7
+  color:#000000;
+  font-family: Noto Sans, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 120%;
+  margin: 0;
 }
 
 .wrapper .footer__share-button a:hover,
@@ -365,7 +379,6 @@ div.preheader {
     background-image: url(http://i10.createsend1.com/static/eb/master/13-the-blueprint-3/images/forward@2x.png) !important;
   }
 }
-
 @media (max-width: 321px) {
   .fixed-width.has-border .layout__inner {
     border-width: 1px 0 !important;
